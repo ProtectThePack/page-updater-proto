@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Luna",
+    "age": "puppy",
+    "size": "small",
+    "gender": "female",
+    "breed": "Pomeranian Mix",
+    "photo": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800",
+    "shortBio": "Tiny bundle of joy! Loves cuddles and short walks.",
+    "fullBio": "Luna is a 6-month-old Pomeranian mix ...",
+    "adoptionFee": "$250",
+    "goodWith": "Adults, older children, other small dogs",
+    "medical": "Spayed, Vaccinated, Microchipped",
+    "status": ""
+  },
+  {
+    "name": "Rocky",
+    "age": "young",
+    "size": "medium",
+    "gender": "male",
+    "breed": "Shepherd Mix",
+    "photo": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=800",
+    "shortBio": "Playful and smart — ready for adventures!",
+    "fullBio": "Rocky is about 2 years old ...",
+    "adoptionFee": "$300",
+    "goodWith": "Adults, teens, medium/large dogs",
+    "medical": "Neutered, Vaccinated, Heartworm negative",
+    "status": "Urgent"
+  }
+]
