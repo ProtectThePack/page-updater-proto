@@ -59,46 +59,23 @@
   </div>
 
   <script>
-    // ── Editable dog data ── add/edit/remove entries here
-    const dogs = [
-      {
-        name: "Luna",
-        age: "puppy",
-        size: "small",
-        gender: "female",
-        photo: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800",
-        bio: "Tiny bundle of joy! Loves cuddles, short walks, and stealing hearts with her fluffy tail.",
-        status: ""
-      },
-      {
-        name: "Rocky",
-        age: "young",
-        size: "medium",
-        gender: "male",
-        photo: "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=800",
-        bio: "Playful, smart, and full of energy. Looking for an active family to go on adventures with.",
-        status: "Urgent"
-      },
-      {
-        name: "Bella",
-        age: "adult",
-        size: "large",
-        gender: "female",
-        photo: "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=800",
-        bio: "Gentle and sweet senior girl who loves quiet evenings and lots of belly rubs.",
-        status: ""
-      },
-      {
-        name: "Max",
-        age: "adult",
-        size: "large",
-        gender: "male",
-        photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sKJVXzGXzwWB1e1VzUUM-CDnBzNvBEWz8g&s",
-        bio: "Loyal companion who knows basic commands and thrives with daily walks and playtime.",
-        status: ""
-      }
-      // Add more dogs here...
-    ];
+  let dogs = [];
+
+  async function loadDogs() {
+    try {
+      const response = await fetch('dogs.json');
+      dogs = await response.json();
+      renderDogs(dogs);
+      makeCardsClickable();  // your existing modal opener
+    } catch (err) {
+      console.error("Failed to load dogs.json", err);
+      // fallback or message
+      document.getElementById('dogsGrid').innerHTML = '<p class="no-results">Error loading pets – check dogs.json</p>';
+    }
+  }
+
+  // Call on page load
+  loadDogs();
 
     function renderDogs(filtered = dogs) {
       const grid = document.getElementById('dogsGrid');
