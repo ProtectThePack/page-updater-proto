@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "New Dog",
+    "photo": "/page-updater-proto/mainimages/dog-1773423954105.jpg",
+    "age": "young",
+    "size": "medium",
+    "gender": "female",
+    "breed": "",
+    "shortBio": "dfgadgad",
+    "fullBio": "adsgfdasfgdasf"
+  }
+]
