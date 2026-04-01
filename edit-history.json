@@ -1,5 +1,12 @@
 [
   {
+    "kind": "data",
+    "target": "header.json",
+    "detail": "Header & nav: header.json + 13 HTML pages",
+    "user": "owner",
+    "time": "2026-04-01T19:19:29.257Z"
+  },
+  {
     "kind": "page",
     "target": "adoption-application.html",
     "detail": "Adoption application page",
