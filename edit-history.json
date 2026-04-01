@@ -1,5 +1,12 @@
 [
   {
+    "kind": "page",
+    "target": "how-to-help.html",
+    "detail": "How to help page",
+    "user": "owner",
+    "time": "2026-04-01T18:45:08.182Z"
+  },
+  {
     "kind": "data",
     "target": "header.json",
     "detail": "Header & nav",
