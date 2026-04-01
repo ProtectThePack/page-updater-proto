@@ -1039,6 +1039,17 @@ nav {
   box-sizing: border-box;
 }
 
+/* Rebrand block above sets `.nav-links { display: flex }` for all widths; restore collapsible menu on small screens */
+@media (max-width: 768px) {
+  header nav .nav-links:not(.nav-open) {
+    display: none;
+  }
+
+  header nav .nav-links.nav-open {
+    display: flex;
+  }
+}
+
 .hero {
   border-radius: 26px;
   margin: 1.2rem auto 0;
